@@ -1,6 +1,6 @@
 # Parallel Merge Sort using parMap in Haskell
 
-PS C:\ghcup\ghc\myproject> cabal build
+cabal build
 
 cabal run myproject "inpe6.txt" "oute6.txt"
 
@@ -20,7 +20,8 @@ PS C:\ghcup\ghc\myproject> cabal update
 
 ## If the error is in import Control.Parallel.Strategies (parMap, rpar, rseq, withStrategy, using, runEval) / import Control.Parallel (par, pseq)
 add in myproject.cabal
- build-depends:    base ^>=4.17.2.1,
-					  parallel >=3.2.2.0,
-					  deepseq >=1.4.8.0,
-					  time >=1.9.3
+ build-depends:    
+ 	base ^>=4.17.2.1,
+			parallel >=3.2.2.0,
+			deepseq >=1.4.8.0,
+			time >=1.9.3
